@@ -96,6 +96,7 @@ h1 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .products a {
@@ -103,7 +104,7 @@ h1 {
   background-color: rgba(0, 88, 171, 1);
   padding: 20px 40px;
   border-radius: 4px;
-  margin: 30px;
+  margin: 40px;
 }
 
 .page {
