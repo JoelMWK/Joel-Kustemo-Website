@@ -89,14 +89,14 @@ h1 {
 }
 
 .products {
-  width: 260px;
-  height: 740px;
-  background: #dae1e3;
-  border-radius: 10px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  width: 260px;
+  height: 740px;
+  background: #dae1e3;
+  border-radius: 10px;
 }
 
 .products a {
@@ -139,7 +139,19 @@ h1 {
   background-color: springgreen;
   padding: 20px;
   border-radius: 20px;
-  height: 500px;
-  width: 700px;
+  height: 50%;
+  width: 60%;
   margin: auto;
+}
+
+.clothing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clothing img {
+  border: solid blue 2px;
+  margin: 2%;
+  width: 25%;
 }
