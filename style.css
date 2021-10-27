@@ -110,12 +110,12 @@ h1 {
 .page {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: space-between;
   margin-top: 2%;
   padding: 10px;
 }
-.page img {
+.page img,
+.page .sidebar {
   border-radius: 10px;
   border: 2px solid blue;
 }
