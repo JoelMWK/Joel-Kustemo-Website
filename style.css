@@ -127,7 +127,6 @@ h1 {
 
 .page {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2%;
   padding: 10px;
@@ -136,23 +135,7 @@ h1 {
 .page .sidebar {
   border-radius: 10px;
   border: 2px solid blue;
-}
-
-.img1 img {
-  width: 370px;
-  height: 370px;
-}
-.img2 img {
-  width: 370px;
-  height: 370px;
-}
-.img3 img {
-  width: 540px;
-  height: 540px;
-}
-.img4 img {
-  width: 540px;
-  height: 200px;
+  max-width: 100%;
 }
 
 .basket {
@@ -178,3 +161,5 @@ h1 {
   margin: 2%;
   width: 25%;
 }
+
+
