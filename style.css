@@ -164,13 +164,19 @@ h4{
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .products img {
-  border: solid blue 2px;
   margin: 2%;
-  width: 25%;
+  width: 40%;
+}
+
+.products div{
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  width: 40%;
 }
 
 
