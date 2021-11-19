@@ -111,6 +111,23 @@ h1 {
   align-items: center;
 }
 
+.sidebar-link a {
+  margin: 15%;
+  transition: 0.5s;
+}
+
+.sidebar-link :hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transform: translateY(15px);
+}
+.sidebar-link .active {
+  border-bottom: 4px solid #f6bc66;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  border-radius: 10px;
+}
+
 .sidebar a:hover {
   color: black;
 }
@@ -129,45 +146,49 @@ h1 {
 
 .page {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
+  justify-content: center;
   padding: 10px;
 }
 .page img,
 .page .sidebar {
+  position: relative;
   border-radius: 10px;
   border: 2px solid blue;
   transition: 0.4s;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .small {
-  height: 570px;
-  width: 570px;
+  height: 370px;
+  width: 370px;
 }
 
 .big {
-  height: 740px;
-  width: 740px;
+  height: 540px;
+  width: 540px;
 }
 
 .narrow {
-  width: 740px;
-  height: 400px;
+  width: 540px;
+  height: 200px;
 }
 
-.tall {
-  height: 1150px;
-  width: 450px;
+.medium {
+  height: 370px;
+  width: 250px;
 }
 
 h5 {
-  margin-top: 0;
+  background-color: #8181813d;
+  padding: 10px;
+  margin-top: 10px;
   text-align: center;
   font-size: 20px;
 }
 
 .page img:hover {
-  transform: translateY(3px);
+  transform: translateY(5px);
 }
 
 .basket {
@@ -193,28 +214,27 @@ h4 {
   border-radius: 10px;
 }
 
-.products {
+.clothing-page {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-
   padding: 10px;
 }
 
-.products img {
-  width: 50%;
-  height: 400px;
-  margin-top: 5%;
+.products{
+  display: flex;
+  flex-flow: wrap row;
 }
 
-.products-card {
-  flex-basis: 33%;
-  background-color: white;
-  border-radius: 30px;
-  text-align: center;
-  margin: 10px;
+.row-3x4{
+  padding: 20px;
+}
+
+.products img {
+  width: 250px;
+  height: 400px;
 }
 
 .selection {
-  width: 25%;
+  display: flex;
+  width: 30%;
+  background-color: white;
 }
