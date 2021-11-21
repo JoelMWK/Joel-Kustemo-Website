@@ -126,7 +126,7 @@ h1 {
   border-bottom: 4px solid #f6bc66;
   background-color: rgba(0, 0, 0, 0.3);
   color: black;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .sidebar a:hover {
@@ -269,6 +269,8 @@ h2 {
   color: black;
   font-weight: bold;
   border-bottom: 3px solid black;
+  background-color: #0000002d;
+  border-radius: 40px;
 }
 
 .tabs-select:checked + .tabs-label + .tabs-content {
@@ -288,4 +290,36 @@ h6,
   color: white;
   text-align: center;
   text-shadow: 2px 2px black;
+}
+
+.centerW {
+  position: relative;
+}
+
+.centerM {
+  position: relative;
+}
+
+.centerW p{
+  position: absolute;
+  bottom: 0;
+
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 85%;
+  text-align: center;
+  transform: translateX(4%);
+}
+
+.centerM p{
+  position: absolute;
+  bottom: 0;
+
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 85%;
+  text-align: center;
+  transform: translateX(4%);
 }
