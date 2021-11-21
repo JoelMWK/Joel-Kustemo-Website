@@ -100,6 +100,7 @@ h1 {
   right: 0;
   background-color: white;
   padding-top: 60px;
+  box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar a {
@@ -149,9 +150,8 @@ h1 {
   justify-content: center;
   padding: 10px;
 }
-.page img,
-.page .sidebar {
-  position: relative;
+
+.page img {
   border-radius: 10px;
   border: 2px solid blue;
   transition: 0.4s;
@@ -219,22 +219,73 @@ h4 {
   padding: 10px;
 }
 
-.products{
+.products {
   display: flex;
   flex-flow: wrap row;
+  justify-content: center;
 }
 
-.row-3x4{
+.row-3x4 {
   padding: 20px;
 }
 
 .products img {
   width: 250px;
   height: 400px;
+  object-fit: cover;
 }
 
 .selection {
-  display: flex;
   width: 30%;
   background-color: white;
+}
+
+.selection a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tabs-label {
+  padding: 10px 20px;
+}
+
+.tabs-select {
+  display: none;
+}
+
+.tabs-select:checked + .tabs-label {
+  color: black;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.tabs-select:checked + .tabs-label + .tabs-content {
+  display: inline-block;
+}
+
+.tabs-content {
+  order: 1;
+  width: 100%;
+  display: none;
+}
+
+h6,
+.clothing-page p {
+  margin-top: 2px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
 }
