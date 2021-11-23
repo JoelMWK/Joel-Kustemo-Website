@@ -30,7 +30,7 @@ li {
   text-decoration: none;
 }
 
-.footer li :hover {
+.hover:hover{
   color: #f6bc66;
   text-shadow: 2px 1px black;
 }
