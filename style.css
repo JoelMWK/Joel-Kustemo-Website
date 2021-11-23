@@ -6,14 +6,14 @@ body {
   background: linear-gradient(#f6bc66, #e77b35, #d63500);
   display: flex;
   flex-flow: wrap column;
+  margin: 0;
 }
 
 .footer {
   display: flex;
+  margin-top: 20%;
   color: rgba(0, 88, 171, 1);
-  width: 100%;
-  height: 200px;
-  margin-top: 15%;
+  padding: 30px;
   background-color: rgba(218, 225, 227, 1);
 }
 
@@ -30,12 +30,30 @@ li {
   text-decoration: none;
 }
 
+.footer li :hover {
+  color: #f6bc66;
+  text-shadow: 2px 1px black;
+}
+
 .footer-details {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin-left: 10%;
+  margin: auto;
   width: 100%;
+  height: 200px;
+  padding: 30px;
+}
+
+.footer-details input,
+textarea,
+.footer-details button {
+  display: flex;
+  justify-content: center;
+  resize: none;
+  width: 200px;
+  margin: 10px;
+  border: rgba(0, 88, 171, 1) solid 2px;
 }
 
 .footer-details img {
@@ -154,7 +172,8 @@ h1 {
 }
 
 .sidebar a:hover {
-  color: black;
+  color: #f6bc66;
+  text-shadow: 2px 1px black;
 }
 
 .sidebar .close {
@@ -177,7 +196,7 @@ h1 {
 
 .page img {
   border-radius: 10px;
-  border: 2px solid blue;
+  border: 4px ridge rgba(0, 88, 171, 1);
   transition: 0.4s;
   margin-left: 5px;
   margin-right: 5px;
@@ -363,24 +382,77 @@ td input {
   border: solid 3px rgba(0, 88, 171, 1);
 }
 
-.info{
-  
-display: flex;
-justify-content: space-between;
-margin: 5%;
-
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5%;
 }
 
-.info h3{
+.info h3 {
   padding: 10px;
-  border-bottom:rgba(0, 88, 171, 1) solid 3px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: rgba(0, 88, 171, 1) solid 3px;
 }
 
-
-.info-details{
+.info-details {
   background-color: rgba(218, 225, 227, 1);
   width: 30%;
   height: 400px;
-  text-align: center;
+  padding: 30px;
   box-shadow: 10px 10px 20px;
+  overflow: auto;
+}
+
+.info-details p {
+  padding: 10px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shoes {
+  padding: 10px;
+  text-align: center;
+}
+
+.shoes-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8%;
+}
+
+.shoes-option {
+  margin: 10px;
+  border: 4px double;
+  background-color: rgba(218, 225, 227, 1);
+}
+
+
+.shoes .shoes-option img {
+  width: 700px;
+  height: 500px;
+  object-fit: fill;
+}
+
+.shoes img{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.shoes-select{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.shoes-select div{
+  margin: 10px;
+  border: 4px double;
+  background-color: rgba(218, 225, 227, 1);
 }
