@@ -277,8 +277,8 @@ h2 {
 
 .tabs {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  height: 10%;
 }
 
 .tabs-label {
